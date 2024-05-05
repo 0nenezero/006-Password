@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>비밀번호 생성하기</title>
+    <link rel="stylesheet" href="assets/style/index.css" />
+  </head>
+  <body>
+    <div id="app">
+      <h1 class="title">Password Generator</h1>
+      <section class="info-cont">
+        <h2>&lt;!&gt;Information</h2>
+        <ul class="info-list">
+          <li>The minimum password length is 5 characters.</li>
+          <li>The maximum password length is 70 characters.</li>
+          <li>
+            For a strong password, it is receommended to use between 10 and 16
+            characters.
+          </li>
+        </ul>
+      </section>
+
+      <section class="form-cont">
+        <h2>Select Option</h2>
+        <form class="type-form">
+          <label for="length" class="length-labl"
+            >Password Length
+            <input
+              type="number"
+              name="length"
+              id="length"
+              min="5"
+              max="70"
+              placeholder=">>> input password length"
+            />
+            <p class="error-txt">error message</p>
+          </label>
+          <fieldset class="type-set">
+            <legend>Characters to include</legend>
+            <div class="check-box">
+              <input type="checkbox" name="number" id="number" checked />
+              <label for="number"> Numbers (0-9) </label>
+            </div>
+            <div class="check-box">
+              <input type="checkbox" name="smallf-letter" id="small-letter" />
+              <label for="small-letter"> Small letters (a-z) </label>
+            </div>
+            <div class="check-box">
+              <input
+                type="checkbox"
+                name="capital-letter"
+                id="capital-letter"
+              />
+              <label for="capital-letter"> Capital letters (A-Z) </label>
+            </div>
+            <div class="check-box">
+              <input type="checkbox" name="symbols" id="symbols" />
+              <label for="symbols">
+                Special characters (@, !, #, $, &, %)
+              </label>
+            </div>
+          </fieldset>
+
+          <button type="submit" class="generate-btn">Generate Password</button>
+        </form>
+      </section>
+      <section class="result-cont">
+        <p id="result">hello</p>
+        <button type="button" class="copy-btn">Copy</button>
+      </section>
+    </div>
+    <script src=""></script>
+  </body>
+</html>
