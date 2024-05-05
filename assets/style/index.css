@@ -138,11 +138,14 @@ h2 {
       width: 2px;
       height: 70%;
       background-color: var(--ColorPrimary);
-      margin-left: 1rem;
-      /* 깜빡이는 애니메이션 */
+      margin-left: 0.5rem;
       animation: blink 1s step-end infinite;
     }
   }
+  #result-hide {
+    display: none;
+  }
+
   .copy-btn {
     margin-left: auto;
   }
@@ -151,5 +154,39 @@ h2 {
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+.modal-cont {
+  background-color: var(--ColorBackground);
+  box-shadow: var(--PrimaryShadow);
+  width: 60%;
+  max-width: 36rem;
+  height: 40%;
+  max-height: 28rem;
+  position: absolute;
+  padding: 3.6rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px outset var(--ColorPrimary);
+
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+
+  &.open {
+    display: flex;
+  }
+
+  text-align: center;
+
+  .modal-txt {
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 }

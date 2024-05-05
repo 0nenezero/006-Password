@@ -8,7 +8,7 @@
   --ColorBackground: #000;
   --ColorPrimary: #00ff80;
   --ColorSecondary: #14bf69;
-  --PrimaryShadow: 0 0 5px #00ff80;
+  --PrimaryShadow: 0 0 1rem #00ff80;
   --FontMain: "cern", monospace;
 }
 * {
@@ -115,8 +115,6 @@ input[type="number"] {
   font-size: 1.8rem;
   font-weight: 800;
 }
-
-출처: https://kcmschool.com/206 [web sprit:티스토리]
 
 .sr-only {
   position: absolute;

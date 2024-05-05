@@ -43,8 +43,8 @@
               <label for="number"> Numbers (0-9) </label>
             </div>
             <div class="check-box">
-              <input type="checkbox" name="smallf-letter" id="small-letter" />
-              <label for="small-letter"> Small letters (a-z) </label>
+              <input type="checkbox" name="lower-letter" id="lower-letter" />
+              <label for="lower-letter"> Lower letters (a-z) </label>
             </div>
             <div class="check-box">
               <input
@@ -66,10 +66,18 @@
         </form>
       </section>
       <section class="result-cont">
-        <p id="result">hello</p>
+        <p id="result"></p>
+        <p id="result-hide"></p>
         <button type="button" class="copy-btn">Copy</button>
       </section>
+      <section class="modal-cont">
+        <h2 class="sr-only">Modal</h2>
+        <p>&lt;!&gt;</p>
+        <p class="modal-txt">Hellos</p>
+        <button type="button" class="modal-close-btn">Close</button>
+      </section>
     </div>
-    <script src=""></script>
+
+    <script src="assets/js/index.js"></script>
   </body>
 </html>
