@@ -1,7 +1,7 @@
 @import "./reset.css";
 @font-face {
   font-family: "cern";
-  src: url("/assets/font/Meyrin-cern-terminal.woff") format("woff");
+  src: url("../font/Meyrin-cern-terminal.woff") format("woff");
 }
 
 :root {
